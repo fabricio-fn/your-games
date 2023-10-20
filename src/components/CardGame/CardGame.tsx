@@ -26,7 +26,7 @@ export default function CardGame() {
     return (
       <div className="cardList">
         {Array.from({ length: 12 }, (_, index) => (
-          <SkeletonCardGame />
+          <SkeletonCardGame key={index} />
         ))}
       </div>
     );
