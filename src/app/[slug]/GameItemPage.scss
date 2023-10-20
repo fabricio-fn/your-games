@@ -1,0 +1,105 @@
+.gameItemPage {
+  width: 100%;
+  flex-direction: column;
+  justify-content: start !important;
+  color: #f9f9f9;
+  align-items: start !important;
+  padding: 0;
+
+  img {
+    height: 80vh;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      height: auto;
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .btnBack {
+        color: blue;
+        font-size: 2rem;
+        text-decoration: underline;
+      }
+
+      h2 {
+        font-size: 50px;
+
+        @media (max-width: 768px) {
+          font-size: 32px;
+        }
+      }
+
+      span {
+        font-size: 19px;
+      }
+
+      .genres {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        span {
+          width: auto;
+          border-radius: .5rem;
+          font-size: 16px;
+          background: rgba(141, 132, 132, 0.274);
+          padding: .5rem;
+          color: #f9f9f9;
+        }
+      }
+    }
+
+    .media {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      justify-content: space-between;
+
+      video {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .shortScreenshots,
+      .clip {
+        width: 550px;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .screenshots {
+          height: 300px;
+          display: flex;
+          gap: 1rem;
+          overflow: scroll;
+
+          img {
+            width: 500px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
