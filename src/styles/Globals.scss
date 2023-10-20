@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #222222;
+}
+
+section,
+header,
+footer {
+	padding: 1rem 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section,
+main,
+header,
+footer {
+	max-width: 1920px;
+	width: 100%;
+}
+
+section { min-height: 100vh; }
+
+img { object-fit: cover; }
+
+a {
+	text-decoration: none;
+	transition: .4s;
+}
