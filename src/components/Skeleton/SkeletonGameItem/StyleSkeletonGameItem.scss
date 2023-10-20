@@ -1,0 +1,65 @@
+.skeletonBox {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+
+  .img,
+  .title,
+  .platforms,
+  .genres {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: #606060;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateX(-100%);
+      background-image: linear-gradient(90deg,
+          rgba(#fff, 0) 0,
+          rgba(#fff, 0.2) 20%,
+          rgba(#fff, 0.5) 60%,
+          rgba(#fff, 0));
+      animation: loading 2s infinite;
+      content: '';
+    }
+
+    @media (max-width: 1024px) { height: 40vh; }
+
+    @media (max-width: 420px) { height: 20vh; }
+  }
+
+  .content {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem 5%;
+
+    .title, .platforms, .genres {
+      height: 2rem;
+      border-radius: .5rem;
+      width: 50%;
+    }
+
+    .platforms, .genres { width: 30%; }
+
+    @media (max-width: 768px) {
+      .title { width: 80%; }
+
+      .platforms, .genres { width: 60%; }
+    }
+  }
+
+  @keyframes loading {
+    100% { transform: translateX(100%); }
+  }
+}
