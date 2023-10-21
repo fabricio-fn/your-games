@@ -12,7 +12,7 @@ export interface iGame {
   name: string;
   slug: string;
   background_image: string;
-  parent_platforms: { platform: { name: string } }[];
+  parent_platforms: { platform: { slug: string } }[];
   released: string;
   genres: { id: number; name: string }[];
   short_screenshots: { id: number; image: string }[];
@@ -52,7 +52,7 @@ export default function CardGame() {
               <div className="platforms">
                 {game.parent_platforms.map((platformInfo, index) => (
                   <span key={index}>
-                    {platformIcons[platformInfo.platform.name]}
+                    {platformIcons[platformInfo.platform.slug]}
                   </span>
                 ))}
               </div>

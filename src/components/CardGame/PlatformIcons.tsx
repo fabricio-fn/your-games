@@ -4,12 +4,12 @@ import { ImMobile } from "react-icons/im"
 import { ReactNode } from 'react';
 
 export const platformIcons: { [key: string]: ReactNode } = {
-  PC: <FaWindows size={20} />,
-  Xbox: <FaXbox size={20} />,
-  PlayStation: <FaPlaystation size={20} />,
-  Nintendo: <BsNintendoSwitch size={20} />,
-  Mac: <BsApple size={20} />,
-  Linux: <FaLinux size={20} />,
-  Android: <BsAndroid2 size={20} />,
-  iOS: <ImMobile size={20} />,
+  pc: <FaWindows size={20} />,
+  xbox: <FaXbox size={20} />,
+  playstation: <FaPlaystation size={20} />,
+  nintendo: <BsNintendoSwitch size={20} />,
+  mac: <BsApple size={20} />,
+  linux: <FaLinux size={20} />,
+  android: <BsAndroid2 size={20} />,
+  ios: <ImMobile size={20} />,
 };
